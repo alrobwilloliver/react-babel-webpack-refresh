@@ -1,5 +1,7 @@
-const React = require('react');
-const ReactDom = require('react-dom')
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+import '../assets/stylesheets/application.scss';
 
 const Hello = (props) => {
     return <div>Hello, {props.name}</div>
@@ -7,5 +9,5 @@ const Hello = (props) => {
 
 const root = document.getElementById('root');
 if (root) {
-    ReactDom.render(<Hello name='Alisa' />, root)
+    ReactDOM.render(<Hello name='Alan' />, root)
 }
